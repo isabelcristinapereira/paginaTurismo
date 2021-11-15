@@ -1,3 +1,6 @@
+
+/* configuraçoens gerais */
+
 *{
     margin: 0;
     padding: 0;
@@ -14,6 +17,18 @@ ul{
 ul li a{
     text-decoration: none;
 }
+
+div img{
+    border-radius: 50px;
+    display: block;
+    width: 100%;
+
+}
+
+
+
+
+/* configuraçoens gerais */
 .flex-container{
     display: flex;
     max-width: 992px;
@@ -21,7 +36,7 @@ ul li a{
    width: 100%;
 }
 
-
+/* menu */
 header{
     background-color: #423518;
     height: 100px;
@@ -33,13 +48,208 @@ header{
 header .list-items{
 display: flex;
 max-width: 260px;
-width: 100%;
+width: 150%;
 justify-content: space-between;
+align-items: center;
+
 }
+
 .list-items li a{
     color:#F5B00F;
 }
 
 header .menu{
     justify-content: space-between;
+    
 }
+/* menu */
+/* apresentação */
+
+.apresentacao{
+    height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+}
+   .apresentacao .texto-apresentacao{
+    min-height: 200px;
+}
+.texto-apresentacao h1{
+    color:#F5B00F;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+.btn{
+    background-color:#423518 ;
+    color: #F5B00F;
+    text-align: center;
+    border-radius: 30px;
+    width: 220px;
+    display: block;
+    text-decoration: none; /* tira o sublinhado */
+    height: 50px;
+    line-height: 45px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* apresentação */
+}
+    /* quem somos */
+#quem-somos{
+      flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+#quem-somos h2{
+    font-size: 32px;
+    color:#F5B00F ;
+    display: flex;
+    margin-bottom: 20px;
+}
+#quem-somos h2::before{  /* traço  */
+    content: "";
+    height: 50px;
+    width: 5px;
+    margin-right: 5px;
+    background-color: #F5B00F;
+    position: relative;
+
+}
+#quem-somos p{
+margin-bottom: 10px;
+width: 90%
+}
+#quem-somos img{
+    min-width: 420px;
+}
+
+/* quem somos */
+
+/* servicos */
+
+.container-externo{
+    background-color: #423518;
+    width: 100%;
+}
+#servicos{
+   
+  flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  margin-top: 20px;
+}
+
+#servicos h2{
+    color:#F5B00F ;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.list-servicos{
+ display: flex;
+ justify-content: space-between;
+}
+
+.list-servicos .item-servico{
+text-align: center;
+}
+
+.item-servico a {
+    width: 120px;
+   background-color:#F5B00F ;
+   border-radius: 30px;
+   height: 50px;
+   text-align: center;
+   margin-top: 20px;
+   line-height: 50px;
+   padding: 5px 10px ;
+   color: #423518;
+   font-size: 12px;
+   text-decoration: none;
+   font-weight: 700;
+}
+.item-servico p{
+    font-weight: 700;
+    font-size: 18px;
+    color:#F5B00F ;
+    margin-top: 20px;
+}
+
+.item-servico img{
+ width: 80%;
+ margin: auto;
+}
+ /* servicos */
+
+ /* planos */
+
+ #planos{
+  flex-direction: column;
+  min-height: 100vh;
+  margin-top: 50px;
+
+ 
+ }
+ #planos h2{
+     font-size: 32px;
+ }
+
+ .list-planos{
+     display: flex;
+     align-items: flex-end;
+     justify-content: space-between;
+ }
+
+ .item-plano{
+  flex: 1;
+  border: 5px solid #F5B00F;
+  margin-right: 20px;
+  padding: 10px;
+  max-width: 240px;
+ }
+
+ .item-plano .btn{
+     margin: auto;
+     margin-bottom: 20px;
+ }
+
+ .item-plano h3{
+     font-size: 24px;
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+     margin-top: 20px;
+ }
+ .item-plano h3::after{
+     content: "";
+     background-color:#e6a822 ;
+     width: 100%;
+     height: 3px;
+     margin-top: 20px;
+     margin-bottom: 10px;
+ }
+
+ .item-plano ul{
+     padding: 10px 20px;
+     display: flex;
+     flex-direction: column;
+     margin-bottom: 10px;
+ }
+
+ .item-plano ul li{
+     display: flex;
+     flex-wrap: nowrap;
+     align-items: center;
+ }
+
+ .item-plano ul li::before{
+     content: "";
+     width: 10px;
+     height: 10px;
+     background-color:#494742 ;
+     margin-right: 5px;
+
+ }
+ /* planos */
+
