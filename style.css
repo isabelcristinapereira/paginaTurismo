@@ -34,6 +34,8 @@ div img{
     max-width: 992px;
     margin: auto;
    width: 100%;
+   min-width: 320px;
+   
 }
 
 /* menu */
@@ -72,6 +74,7 @@ header .menu{
 }
    .apresentacao .texto-apresentacao{
     min-height: 200px;
+    
 }
 .texto-apresentacao h1{
     color:#F5B00F;
@@ -121,7 +124,8 @@ margin-bottom: 10px;
 width: 90%
 }
 #quem-somos img{
-    min-width: 420px;
+    min-width: 320px;
+    margin: auto;
 }
 
 /* quem somos */
@@ -207,6 +211,7 @@ text-align: center;
   margin-right: 20px;
   padding: 10px;
   max-width: 240px;
+  margin-bottom: 20px;
  }
 
  .item-plano .btn{
@@ -263,5 +268,41 @@ text-align: center;
  footer .footer{
      justify-content: space-between;
      color:#e6a822  ;
+ }
+
+ /* roda pe */
+
+ /* trabalhando com responsividade */
+ @media (max-width:992px){
+     .flex-container{
+         flex-direction: column;
+     }
+     .apresentacao{
+         flex-direction: column-reverse;
+     }
+     .apresentacao .texto-apresentacao{
+        min-height: 200px;
+        width: 100%;
+    }
+    #quem-somos{
+        flex-direction: column-reverse;
+    }
+    .list-servicos{
+        flex-direction: column;
+    }
+    .item-serico img{
+        width: 50%;
+        margin: auto;
+    }
+    .list-planos{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+    .list-planos .item-plano{
+        max-width: 90%;
+        margin: auto;
+        width: 100%;
+    }
  }
 
